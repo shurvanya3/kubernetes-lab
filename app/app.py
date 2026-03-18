@@ -9,7 +9,7 @@ def index():
 	return jsonify({
 		"service": "devops-lab",
 		"hostname": socket.gethostname(),
-		"version": os.environ.get("APP_VERSION", "1.0.0"),
+		"version": os.environ.get("APP_VERSION", "2.0.0"),
 	})
 
 @app.route('/health')
